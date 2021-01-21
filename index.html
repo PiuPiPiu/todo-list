@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="styles/fonts.css">
+  <link rel="stylesheet" type="text/css" href="styles/gauge.css">
+  <link rel="stylesheet" type="text/css" href="styles/index.css">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./fontawesome-free-5.15.1-web/css/all.min.css">
+</head>
+
+<body>
+  <div class="header_todo">
+    Today
+  </div>
+  <div class="container">
+    <div class="gauge">
+      <div class="gauge__average">
+        <svg viewBox="0 0 120 120" class="gauge__cirlce" fill="none" stroke-width="2">
+          <circle class="gauge__cirlce-base" r="53" cx="60" cy="60"></circle>
+          <circle class="gauge__cirlce-arc" r="53" cx="60" cy="60" transform="rotate(-90 60 60)" stroke-dashoffset="0"
+            stroke-dasharray="1 329">
+          </circle>
+        </svg>
+        <div class="gauge__percent">0</div>
+      </div>
+    </div>
+    <!-- <div class="button incr">+</div>
+    <div class="button decr">-</div> -->
+
+    <div class="count_task">0 tasks to do</div>
+    <div class="input_container">
+      <div class="new_day_screen">
+        <img src="What.JPG" id="what_day" class="image_day">
+        <div class="text1">What’s up!</div>
+        <div class="text2">What do you want to do today?</div>
+      </div>
+      <div class="all_down_screen">
+        <img src="All.JPG"  id="all_day" class="all_down_img_day">
+        <div class="text3">All done!</div>
+        <div class="text4">Have a party or go for a walk!</div>
+      </div>
+      <div class="input_list"></div>
+      <div class="container_text">
+        <button class="add_task" id="hider">+</button>
+        <input class="input_text" placeholder="What's next?">
+      </div>
+    </div>
+  </div>
+  <div class="new_day_button" type="button">
+    <i class="fas fa-calendar-day"></i>
+    <div class="day_elem">
+      New day
+    </div>
+  </div>
+  <script type="text/javascript" src="scripts/helpers.js"></script>
+  <script type="text/javascript" src="scripts/index.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>
